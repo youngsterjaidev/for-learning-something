@@ -1,0 +1,19 @@
+name: Cypress Tests
+
+on: [push]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        # Install NPM dependencies, cache them correctly
+        # and run all the Cypress Tests
+      - name: Cypress run
+        uses: cypress-io/github-action/@v5.x.x # uses the explicit version number
+        width: 
+          build: npm run build
+          start: npm start
+      - name: Run the jest
+        run: npm test

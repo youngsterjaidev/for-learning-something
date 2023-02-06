@@ -1,0 +1,27 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "This repo contains all the testing and exploring demos for new tools and technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngsterjaidev/for-learning-something.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youngsterjaidev/for-learning-something/issues"
+  },
+  "homepage": "https://github.com/youngsterjaidev/for-learning-something#readme",
+  "dependencies": {
+    "cypress": "^12.5.1",
+    "jest": "^29.4.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0"
+  }
+}
