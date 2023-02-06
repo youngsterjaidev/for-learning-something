@@ -12,7 +12,7 @@ jobs:
         # and run all the Cypress Tests
       - name: Cypress run
         uses: cypress-io/github-action/@v5.x.x # uses the explicit version number
-        width: 
+        with: 
           build: npm run build
           start: npm start
       - name: Run the jest
