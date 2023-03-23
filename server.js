@@ -3,7 +3,7 @@ const port = process.env.PORT || 5000
 const app = require("express")()
 
 app.get("/", (req, res) => {
-    res.json(os.cpus())
+    res.json({ cpus: os.cpus(), osType: os.version() })
 })
 
 app.listen(port, () => {
